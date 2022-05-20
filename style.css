@@ -32,6 +32,10 @@ h1 {
   height: 62px;
 }
 
+.menu-items {
+  background-color: #ffffffa3;
+}
+
 .navbar .menu-items {
   display: flex;
 }
@@ -149,6 +153,6 @@ h1 {
   transform: rotate(-45deg);
 }
 
-.nav-container input[type="checkbox"]:checked ~ .logo{
+/* .nav-container input[type="checkbox"]:checked ~ .logo{
   display: none;
-}
+} */
