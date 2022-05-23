@@ -17,8 +17,16 @@
             background-color: antiquewhite;
         }
 
-        video {
-            width: 30%;
+        @media (max-width: 500px) {
+            video {
+                width: 90%;
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 3000px) {
+            video {
+                width: 30%;
+            }
         }
     </style>
 </head>
