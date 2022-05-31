@@ -52,13 +52,16 @@
             </ul>
         </div>
     </nav>
-    <h1>Videos de Youtube</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/9Doy_R7tfHk" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pXkctRYYGjo" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+
+<frameset rows="30%,*" frameborder=1 bgcolor="yellow">
+
+    <frame src="header.html" scrolling="No"></frame>
+    <frameset cols="30%,*" frameborder=1>
+        <frame src="menu.html" name="izquierda"></frame>
+        <frame src="bienvenida.html" name="side"></frame>
+    </frameset>
+
+</frameset>
 </body>
 
 </html>
