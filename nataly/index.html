@@ -18,7 +18,7 @@
                 linear-gradient(rgba(0, 0, 0, 0.4),
                     rgba(0, 0, 0, 0.4)),
                 url(images/background.jpg);
-
+            color: white;
         }
 
         marquee {
@@ -46,6 +46,25 @@
             margin-top: 20px;
             text-align: center;
         }
+
+        form {
+            margin-top: 15vh;
+        }
+
+        .name,
+        .last-name,
+        .comment,
+        .send {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #comment {
+            width: 200px;
+            height: 200px;
+        }
     </style>
 </head>
 
@@ -55,7 +74,25 @@
         <a href="terrestres.html" class="button1" id="button-1">Animales Terrestres</a>
         <a href="acuaticos.html" class="button1" id="button-2">Animales Acuaticos</a>
         <a href="aereos.html" class="button1" id="button-3">Animales Aereos</a>
+
     </div>
+    <form action="formulario.html">
+        <div class="name">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="last-name">
+            <label for="name">Apellidos</label>
+            <input type="text" name="last-name" id="last-name">
+        </div>
+        <div class="comment">
+            <label for="comment">Comentario</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <div class="send">
+            <input type="submit" value="Enviar Comentario">
+        </div>
+    </form>
 </body>
 
 </html>
