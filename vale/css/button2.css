@@ -1,0 +1,15 @@
+a.button2 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a.button2:hover {
+  background-color: rgb(255, 101, 101);
+  color: black;
+}
+
+a.button2 {
+  background-color: #f1f1f1;
+  color: black;
+}
