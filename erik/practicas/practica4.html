@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4</title>
+    <link rel="stylesheet" href="menustyle.css">
+    <style>
+        .p1 {
+            font-family: impact;
+            color: black;
+        }
+
+        .p2 {
+            font-family: algerian;
+            color: slateblue;
+        }
+
+        .p3 {
+            color: tomato;
+            font-family: script;
+        }
+
+        body {
+            font-family: "Segoe UI", "Roboto";
+            background-color: aliceblue;
+        }
+
+        #img_client-server {
+            max-width: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="/index.html">Pagina Principal</a></li>
+                <li><a class="menu__item" href="practica1.html">Practica 1</a></li>
+                <li><a class="menu__item" href="practica2.html">Practica 2</a></li>
+                <li><a class="menu__item" href="practica3.html">Practica 3</a></li>
+                <li><a class="menu__item" href="practica4.html">Practica 4</a></li>
+                <li><a class="menu__item" href="practica5.html">Practica 5</a></li>
+                <li><a class="menu__item" href="practica6.html">Practica 6</a></li>
+                <li><a class="menu__item" href="practica7.html">Practica 7</a></li>
+                <li><a class="menu__item" href="practica8.html">Practica 8</a></li>
+                <li><a class="menu__item" href="/practicas/practica9/practica9.html">Practica 9</a></li>
+                <li><a class="menu__item" href="practica11.html">Practica 11</a></li>
+                <li><a class="menu__item" href="practica12.html">Practica 12</a></li>
+                <li><a class="menu__item" href="practica13.html">Practica 13</a></li>
+                <li><a class="menu__item" href="practica14.html">Practica 14</a></li>
+                <li><a class="menu__item" href="practica15.html">Practica 15</a></li>
+                <li><a class="menu__item" href="practica16.html">Practica 16</a></li>
+                <li><a class="menu__item" href="practica17.html">Practica 17</a></li>
+                <li><a class="menu__item" href="practica18.html">Practica 18</a></li>
+                <li><a class="menu__item" href="/practicas/practica19/practica19.html">Practica 19</a></li>
+                <li><a class="menu__item" href="/practicas/practica20/practica20.html">Practica 20</a></li>
+                <li><a class="menu__item" href="practica21.html">Practica 21</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="p1">
+        <h1>Como funciona la web</h1>
+        <p>Cómo funciona la web proporciona una vista simplificada de lo que sucede cuando ves una página web en un
+            navegador web de tu computador o teléfono.</p>
+        <p>Esta teoría no es esencial para escribir código web a corto plazo, pero en poco tiempo empezarás a
+            beneficiarte realmente al entender lo que está sucediendo en el fondo.</p>
+        <h2>Los clientes y servidores</h2>
+        <p>Las computadoras conectadas a la web se llaman clientes y servidores. Un diagrama simplificado de cómo
+            interactúan se vería así:</p>
+        <img src="https://mdn.mozillademos.org/files/17299/Cliente-Servidor.png" id="img_client-server">
+        <ul>
+            <li>Los clientes son dispositivos de los usuarios conectados a Internet (por ejemplo, tu ordenador conectado
+                a la red Wi-Fi o el teléfono conectado a la red de telefonía móvil) y el software que se encuentra
+                disponible y permite acceder a Internet en dichos dispositivos (normalmente, un navegador web como
+                Firefox o Chrome).</li>
+            <li>Los servidores son computadores que almacenan páginas web, sitios o aplicaciones. Cuando un dispositivo
+                cliente quiere acceder a una página web, una copia de la página web se descarga desde el servidor en el
+                equipo cliente y se muestra en el navegador web del usuario.</li>
+        </ul>
+    </div>
+
+    <div class="p2">
+        <h2>Las otras partes de la caja de herramientas</h2>
+        <p>El cliente y el servidor que describimos anteriormente, no cuentan toda la historia. Hay muchas otras partes
+            involucradas y vamos a describirlas a continuación.</p>
+        <p>Por ahora, imaginemos que la web es un camino. En un extremo de la carretera, está el cliente, que es como tu
+            casa. En el extremo opuesto del camino, está el servidor, que es una tienda en la que deseas comprar algo.
+        </p>
+        <p>Además del cliente y el servidor, también tenemos que saludar a:</p>
+        <ul>
+            <li>Tu conexión a Internet: permite enviar y recibir datos en la web. Básicamente es el recorrido entre tu
+                casa y la tienda.</li>
+            <li>TCP/IP: Protocolo de Control de Transmisión y Protocolo de Internet, son los protocolos de comunicación
+                que definen cómo deben viajar los datos a través de la web. Esto es, los medios de transporte que te
+                permiten hacer un pedido, ir a la tienda y comprar los productos. En nuestro ejemplo, podría ser un
+                coche, una bicicleta o tus propios pies.</li>
+            <li>DNS: los servidores del Sistema de Nombres de Dominio (DNS, por sus siglas en inglés), son como una
+                libreta de direcciones de sitios web. Cuando escribes una dirección web en el navegador, el navegador
+                busca los DNS antes de recuperar el sitio web. El navegador necesita averiguar en qué servidor vive el
+                sitio web y así enviar los mensajes HTTP al lugar correcto (ver más abajo). Esto es como buscar la
+                dirección de la tienda para que puedas llegar a ella.</li>
+            <li>HTTP: el Protocolo de Transferencia de Hipertexto es un protocolo de aplicación que define un idioma
+                para que los clientes y servidores se puedan comunicar. Esto es como el idioma que utilizas para ordenar
+                tus compras.</li>
+            <li>Archivos componentes: un sitio web se compone de muchos archivos diferentes, que son como las diferentes
+                partes de los productos que comprarás en la tienda. Estos archivos se dividen en dos tipos principales:
+            </li>
+            <ul>
+                <li>Archivos de código: los sitios web se construyen principalmente con HTML, CSS y JavaScript, aunque
+                    te encontrarás con otras tecnologías más adelante.</li>
+                <li>Recursos: este es un nombre colectivo para el resto de materiales que conforman un sitio web, como
+                    imágenes, música, video, documentos de Word, archivos PDF, etc.</li>
+            </ul>
+        </ul>
+    </div>
+
+    <div class="p3">
+        <h2>Entonces, ¿qué sucede exactamente?</h2>
+        <p>Cuando escribes una dirección web en el navegador (usando nuestra analogía para ir a la tienda):</p>
+        <ol>
+            <li>El navegador va al servidor DNS y encuentra la dirección real del servidor donde el sitio web vive
+                (encontrar la dirección de la tienda).</li>
+            <li>El navegador envía un mensaje de petición HTTP al servidor, pidiéndole que envíe una copia de la página
+                web para el cliente (ir a la tienda y hacer un pedido). Este mensaje y todos los datos enviados entre el
+                cliente y el servidor, se envían a través de tu conexión a Internet usando TCP/IP.</li>
+            <li>Siempre que el servidor apruebe la solicitud del cliente, el servidor enviará al cliente un mensaje «200
+                OK», que significa, «¡por supuesto que puedes ver ese sitio web! Aquí está.», y comenzará a enviar los
+                archivos de la página web al navegador como una serie de pequeños trozos llamados paquetes de datos (la
+                tienda te entrega tus productos y los llevas de regreso a casa).</li>
+            <li>El navegador reúne los pequeños trozos, forma un sitio web completo y te lo muestra (llegas a casa con
+                tus nuevas compras).</li>
+        </ol>
+
+        <h2>Explicación de los DNS</h2>
+        <p>Las direcciones webs reales no son las agradables y fácilmente recordables secuencias que tecleas en la barra
+            de direcciones para encontrar tus sitios webs favoritos. En realidad, se trata de secuencias de números,
+            algo como 63.245.217.105.</p>
+        <p>Lo anterior se llama dirección IP y representa un lugar único en la web. Sin embargo, no es muy fácil de
+            recordar, ¿verdad? Por eso se inventaron los servidores de nombres de dominio. Estos son servidores
+            especiales que hacen coincidir una dirección web tecleada desde tu navegador («mozilla.org», por ejemplo)
+            con la dirección real del sitio web (IP).</p>
+        <p>Los sitios webs se pueden acceder directamente a través de sus direcciones IP. Intenta acceder a la página
+            web de Mozilla escribiendo 63.245.217.105 en la barra de dirección de una nueva pestaña en tu navegador.
+            Puedes encontrar la dirección IP de un sitio web escribiendo su dominio en una herramienta como IP Checker.
+        </p>
+        <img src="https://mdn.mozillademos.org/files/8405/dns-ip.png" id="img_dns-ip">
+
+        <h2>Explicación de los paquetes</h2>
+        <p>Anteriormente hemos utilizado el término paquetes para describir el formato en que los datos se envían desde
+            el servidor al cliente. ¿Qué significa esto? Básicamente, que los datos se envían a través de la web como
+            miles de trozos pequeños, permitiendo que muchos usuarios pueden descargar la misma página web al mismo
+            tiempo. Si los sitios web fueran enviados como grandes trozos, sólo un usuario podría descargarlos a la vez,
+            lo que volvería a la web muy ineficiente y poco divertida.</p>
+    </div>
+</body>
+
+</html>
