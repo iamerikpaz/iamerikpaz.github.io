@@ -15,12 +15,39 @@
             font-family: 'Roboto Mono', monospace;
 
         }
+
+        @media (max-width: 500px) {
+            img {
+                width: 90%;
+                height: auto;
+
+            }
+        }
+
+        @media (min-width: 500px) and (max-width: 3000px) {
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
 <body>
     <center>
         <h1>Galeria de imagenes</h1>
+        <table>
+            <tr>
+                <td><img src="images/img2.jfif" alt=""></td>
+                <td><img src="images/img3.jfif" alt=""></td>
+                <td><img src="images/img4.jfif" alt=""></td>
+            </tr>
+            <tr>
+                <td><img src="images/img5.jfif" alt=""></td>
+                <td><img src="images/img6.jfif" alt=""></td>
+                <td><img src="images/img7.jfif" alt=""></td>
+            </tr>
+        </table>
         <a href="page3.html" class="button2">🡸 Regresar</a>
     </center>
 </body>
