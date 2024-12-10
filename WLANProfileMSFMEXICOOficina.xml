@@ -10,9 +10,6 @@
 	</SSIDConfig>
 	<connectionType>ESS</connectionType>
 	<connectionMode>auto</connectionMode>
-	<connection>
-		<identity>host/WiFi-Client</identity>
-	</connection>
 	<autoSwitch>false</autoSwitch>
 	<MSM>
 		<security>
