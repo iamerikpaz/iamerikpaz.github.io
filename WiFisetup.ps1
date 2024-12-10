@@ -5,6 +5,7 @@ $certUrlIntermediate = "https://iamerikpaz.github.io/intermediate.crt"
 $wlanProfileUrl = "https://iamerikpaz.github.io/WLANProfileMSFMEXICOOficina.xml"
 $localCertRoot = "$env:temp\IdenTrust_Commercial_Root_CA_1.pem"
 $localCertUser = "$env:temp\client.p12"
+$localCertIntermediate = "$env:temp\intermediate.crt"
 $localWlanProfile = "$env:temp\WLANProfileMSFMEXICOOficina.xml"
 $certPassword = "Ps4?d"
 
