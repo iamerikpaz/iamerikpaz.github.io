@@ -17,7 +17,7 @@ Import-Certificate -FilePath $localCertRoot -CertStoreLocation Cert:\LocalMachin
 
 # Install User Certificate
 $securePassword = ConvertTo-SecureString -String $certPassword -AsPlainText -Force
-Import-PfxCertificate -FilePath $localCertUser -CertStoreLocation Cert:\LocalMachine\My -Password $securePassword -Verbose
+Import-PfxCertificate -FilePath $localCertUser -CertStoreLocation Cert:\LocalMachine\Root -Password $securePassword -Verbose
 
 # Add WLAN Profile
 netsh wlan add profile filename=$localWlanProfile
