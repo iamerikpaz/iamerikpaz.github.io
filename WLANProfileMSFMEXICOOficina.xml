@@ -8,9 +8,11 @@
 		</SSID>
 		<nonBroadcast>false</nonBroadcast>
 	</SSIDConfig>
-	<identity>host/WiFi-Client</identity>
 	<connectionType>ESS</connectionType>
 	<connectionMode>auto</connectionMode>
+	<connection>
+		<identity>host/WiFi-Client</identity>
+	</connection>
 	<autoSwitch>false</autoSwitch>
 	<MSM>
 		<security>
