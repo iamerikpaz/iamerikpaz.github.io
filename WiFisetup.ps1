@@ -7,7 +7,6 @@ $localCertRoot = "$env:temp\IdenTrust_Commercial_Root_CA_1.pem"
 $localCertUser = "$env:temp\client.p12"
 $localCertIntermediate = "$env:temp\intermediate.crt"
 $localWlanProfile = "$env:temp\WLANProfileMSFMEXICOOficina.xml"
-$certPassword = "Ps4?d"
 
 # Download Files
 Invoke-WebRequest -Uri $certUrlRoot -OutFile $localCertRoot
@@ -18,6 +17,10 @@ Invoke-WebRequest -Uri $wlanProfileUrl -OutFile $localWlanProfile
 # Install Root Certificate
 Import-Certificate -FilePath $localCertRoot -CertStoreLocation Cert:\LocalMachine\Root
 Import-Certificate -FilePath $localCertIntermediate -CertStoreLocation Cert:\LocalMachine\Root
+
+# Prompt for User Certificate Password
+Write-Host "Por favor, introduce la contraseña del certificado de usuario:"
+$certPassword = Read-Host "Contraseña"
 
 # Install User Certificate
 $securePassword = ConvertTo-SecureString -String $certPassword -AsPlainText -Force
